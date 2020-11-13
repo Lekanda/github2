@@ -6,4 +6,4 @@
     - [https://lekanda.github.io/github2/](https://lekanda.github.io/github2/)
 
 
-> Curso de Udemy Curso de Git y Github: GIT PROFESIONAL desde cero …Curso de Git y Github: GIT PROFESIONAL desde cero + E-Book :exclamation::exclamation:
+> Curso de Git y Github: GIT PROFESIONAL desde cero …Curso de Git y Github: GIT PROFESIONAL desde cero + E-Book :exclamation::exclamation:
