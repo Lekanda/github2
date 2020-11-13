@@ -1,7 +1,7 @@
 ###         :star:APUNTES DEL CURSO DE GITHUB:star:
-
+![Curso  GitHub2](F:\Mis Documentos\Mis Cursos)
 - Fecha inicio: **13/11/2020**
-
+- Curso por _Cesar Colina_
 - Web del curso con datos de interes y metodos abreviados
     - [https://lekanda.github.io/github2/](https://lekanda.github.io/github2/)
 
