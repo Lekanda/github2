@@ -44,14 +44,15 @@
 > Configuracion inicial para instalar Git -Cap.9
 
 ### GIT INIT
- - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
- ```
+- Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
+```
           git init
- ```
+```
  
- - Se puede tambien clonar un repositorio de alguien
- ```
-           
- ```
+- Se puede **tambien** clonar un repositorio de alguien
  
- ### GIT 
+### GIT LOG
+- Listado de commits hechos. **Lista completa con mucha informacion**
+> Con el Alias actual seria: **git lg**
+
+### GIT STATUS
