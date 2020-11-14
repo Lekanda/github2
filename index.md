@@ -62,3 +62,7 @@
 > Con el Alias actual seria: **git lg**
 
 ### GIT STATUS
+- Con alias utilizamos 
+```
+          git s
+```
