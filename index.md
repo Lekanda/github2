@@ -1,4 +1,4 @@
-## Comandos Git/GitHub
+# Comandos Git/GitHub
 
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
 
@@ -17,12 +17,11 @@
 
 ---
 
- ### GIT COMMIT
+### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
  
  
  ---
- 
  
  ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
