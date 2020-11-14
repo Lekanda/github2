@@ -13,13 +13,11 @@
 - __git add "*.txt"__ => Añade todos los **_.txt_** del **_proyecto_**.
 - **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
 - __git reset *.xml__ =>  Quita del Stage todos los archivos _.xml_
-
-
+> Comandos para añadir archivos al Stage
 
 ### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
- 
-
+ > Crear COMMITS
  
 ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
@@ -43,3 +41,17 @@
  ```
           git config user.name => 
  ```
+> Configuracion inicial para instalar Git -Cap.9
+
+### GIT INIT
+ - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
+ ```
+          git init
+ ```
+ 
+ - Se puede tambien clonar un repositorio de alguien
+ ```
+           
+ ```
+ 
+ ### GIT 
