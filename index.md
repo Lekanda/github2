@@ -16,13 +16,13 @@
 
 ---
 
-# GIT COMMIT
+### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
  
  
  ---
  
- # GIT CONFIG
+### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
  ```
