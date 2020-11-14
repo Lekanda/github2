@@ -5,14 +5,14 @@
 
 
 ### GIT ADD
-- **git add .** => Añade todos los archivos con cambios en repositorio.:green_heart:
+- **git add .** => Añade todos los archivos con cambios en repositorio.
 - **git add -A** => Añade todos los archivos con cambios en repositorio.
 - **git add --all** => Añade todos los archivos con cambios en repositorio, parecido **-A**.
 - **git add _nombreArchivo.ext_**=> Anade archivo dado.
 - __git add *.png__=> Añade todos los archivos **_.png_**.
 - __git add "*.txt"__ => Añade todos los **_.txt_** del **_proyecto_**.
 - **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
-- __git reset *.xml__ => :warning: Quita del Stage todos los archivos **_.xml_**.
+- __git reset *.xml__ =>  Quita del Stage todos los archivos **_.xml_**.
 
  ### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.:green_heart:
