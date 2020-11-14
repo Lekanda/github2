@@ -1,5 +1,10 @@
 # Comandos Git/GitHub
 
+### INDICE
+- [GIT ADD](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-add)
+- [GIT COMMIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-commit)
+- [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
+
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
 
 
