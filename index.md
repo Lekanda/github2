@@ -14,8 +14,15 @@
 - **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
 - __git reset *.xml__ =>  Quita del Stage todos los archivos **_.xml_**.
 
+
+
+
  ### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
+ 
+ 
+ 
+ 
  
  ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
