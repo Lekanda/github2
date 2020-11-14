@@ -1,13 +1,14 @@
 # Comandos Git/GitHub
 
-### INDICE
+### :star: INDICE de comandos :star:
 - [GIT ADD](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-add)
 - [GIT COMMIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-commit)
 - [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
+- [GIT INIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-init)
+- [GIT LOG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-log)
+- [GIT STATUS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-status)
 
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
-
-
 
 ### GIT ADD
 - **git add .** => Añade todos los archivos con cambios en repositorio.
