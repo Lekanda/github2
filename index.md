@@ -1,4 +1,4 @@
-## Comandos Git/GitHub :computer:
+## Comandos Git/GitHub
 
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
 
@@ -15,10 +15,10 @@
 - __git reset *.xml__ =>  Quita del Stage todos los archivos **_.xml_**.
 
  ### GIT COMMIT
- - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.:green_heart:
+ - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
  
  ### GIT CONFIG
- - :warning: Solo se hace una vez al instalar **GIT** :warning:
+ - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
  ```
          git config --global user.name "nombre de usuario"
