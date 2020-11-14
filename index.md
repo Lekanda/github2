@@ -17,10 +17,9 @@
 ---
 
 ### GIT COMMIT
- - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
+ - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
  
- 
- ---
+---
  
 ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
