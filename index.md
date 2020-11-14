@@ -12,18 +12,17 @@
 - __git add *.png__=> Añade todos los archivos **_.png_**.
 - __git add "*.txt"__ => Añade todos los **_.txt_** del **_proyecto_**.
 - **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
-- __git reset *.xml__ =>  Quita del Stage todos los archivos **_.xml_**.
-
+- __git reset *.xml__ =>  Quita del Stage todos los archivos _.xml_
 
 ---
 
-### GIT COMMIT
+# GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**.
  
  
  ---
  
- ### GIT CONFIG
+ # GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
  ```
