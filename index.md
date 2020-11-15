@@ -29,6 +29,7 @@
 ##### git lg
 ```
 git config --global alias.lg "log --oneline --decorate --all --graph"
+--oneline => una linea por commit
 ```
 - Con esta linea decimos que :
     - Escribir **git lg** para ejecutar el **alias**. Crea una vista mas clara del repositorio en consola
@@ -60,12 +61,39 @@ git config --global alias.s "status -s -b"
 
 
 ### GIT COMMIT
- - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
- > Crear COMMITS
- 
- - Sí se olvida algun cambio que deberia haberse metido en el ultimo commit; ejecutar :
+##### Hacer commits
+- **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
+- **git commit -am "_mensaje de commit_"** => Hace commit y Stage a **repositorio local**
+
+
+
+
+
+### CAMBIOS EN STAGE Y COMMIT
+##### Actualizar y restaurar COMMITS
+- Sí se **olvida algun cambio** que deberia haberse metido en el ultimo commit; ejecutar :
     - **git commit --amend**
     - En **Editor** poner _nombre de commit nuevo_
+
+- Sí se quiere **cambiar la descripcion** del commit; ejecutar :
+    - **git commit --amend -m "_mensaje de commit modificado_"**
+    - En **Editor** poner _nombre de commit nuevo_
+
+- **Deshace cambios en el commit** de un archivo dado
+    - `git reset HEAD _archivo.ext`
+
+- **Mete cambios al ultimo commit con mismo nombre**
+    - `gir rest --soft HEAD^`
+
+##### Deshacer cambios en STAGE
+- **Como deshacer cambios en el Stage** en un **archivo determinado**
+    - `git checkout -- archivo.ext`
+
+- **Como deshacer cambios en el Stage** en **todos** los archivos
+    - `git checkout -- .`
+
+
+
 
 
 
@@ -125,5 +153,41 @@ git config --global alias.s "status -s -b"
 
 
 ### GIT DIFF
-- Nos da diferencias del ultimo commit y lo actual
-        `git diff`
+- Nos da diferencias del **ultimo commit y lo actual**
+    `git diff`
+- Nos da diferencias entre **2 commits dados**
+    `git diff hashviejo hashnuevo`
+- Nos da la diferencia **con un numero de orden de commit**. En este caso el penultimo(**~** = anterior)
+    `git diff HEAD~1`
+
+
+
+
+
+### GIT RESET
+> ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta.
++
+##### GIT RESET
+- Para **eliminar** un commmit con **hash dado**:
+    `git reset f6e2697`
+
+##### GIT RESET --HARD
+- **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
+    `git reset --hard hashCommit`
+
+##### GIT RESET --SOFT
+- Va a **eliminar** los commits antes de un **hashCommit** dado , y los cambios **los guarda en el Stage**
+    `git reset --soft hashCommit`
+
+##### GIT RESET --MIXED
+- Retorna al commit seleccionado
+    `git reset --mixed hashCommit`
+
+
+
+
+
+### GIT REVERT
+- Es parecido a **RESET** pero menos peligroso.
+    - 
+    `git revert HEAD`
