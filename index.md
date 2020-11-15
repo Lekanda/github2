@@ -53,7 +53,7 @@ git config --global alias.s "status -s -b"
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
  > Crear COMMITS
  
-
+- 
 
 
 ### GIT CONFIG
