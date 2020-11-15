@@ -258,7 +258,7 @@
 
 
 
-#### GIT TAGS
+### GIT TAGS
 - **Crear** un TAG
     - `git tag nombre-tag`
 - **Listar** los TAGs
@@ -280,7 +280,6 @@
 
 
 
-### BIBLIOGAFIA
-- **Makigas**: Tutoriales de programacion - (http://www.google.es)[http://www.google.es]
-- **Curso de Git y GitHub** por  - **Udemy** Formacion Online
-- 
+### BIBLIOGAFIA, CURSOS Y DEMAS FUENTES
+- **Makigas**: Tutoriales de programacion - (Link)["http://www.google.com"]
+- **Curso de Git y GitHub** por  - 
