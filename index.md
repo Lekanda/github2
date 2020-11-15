@@ -182,7 +182,7 @@
 ### GIT RESET
 > ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta.
 
- #### GIT RESET
+#### GIT RESET
 - Para **eliminar** un commmit con **hash dado**:
     `git reset f6e2697`
 
@@ -245,25 +245,42 @@
 - Para **unir ramas** , **estando en la rama en la que se va ha fusionar** (_main por ejemplo_)
     - `git merge nombre-rama`
     - **Hay que hacer un commit final en el que se integran las 2 ramas**
+- Para abortar uniones que estan en marcha y tienen muchos conflictos
+    - `git merge --abort`
 
 #### Tipos de merge/uniones
 - **Fast forward** -> Rapida. **No hay cambios**
-- **Automatica** -> **No hay discordias** entra ramas y se unen
--  **Manual** -> Hay conflictos entre ramas y se debe hacer la union de forma **manual**
+- **Automatica/Recursiva** -> **No hay discordias** entra ramas y se unen
+- **Manual** -> Hay conflictos entre ramas y se debe hacer la union de forma **manual** en Editor
 
 
 
 
 
 
-
-
-
+#### GIT TAGS
+- **Crear** un TAG
+    - `git tag nombre-tag`
+- **Listar** los TAGs
+    - `git tag`
+- **Borrar** un TAG
+    - `git tag -d nombre-tag`
+- **Crear TAG poniendo nombre de TAG y  descripcion**
+    - `git tag -a v0.0.1 -m "descrpcion de TAG"`
+- **Crear TAG poniendo nombre de TAG y  descripcion** con un **hash** dado. Se puede hacer en cualquier commit
+    - `git tag -a v0.0.1 hashCommit -m "descrpcion de TAG"`
+    - `git tag  v0.0.1 hashCommit`
+- **Listar Datos de un TAG dado**
+    - `git show nombre-tag`
+- Para **regresar a un TAG dado**
+    - `git checkout v0.1.0`
+- **Filtrar** TAGs que coincidan con la busqueda
+    - `git tag -l "v0.1.*"`
 
 
 
 
 ### BIBLIOGAFIA
-- Makigas: Tutoriales de programacion - (Canal de YouTube)[http://www.google.es]
-- Curso de Git y GitHub por  - Udemy Formacion Online
+- **Makigas**: Tutoriales de programacion - (http://www.google.es)[http://www.google.es]
+- **Curso de Git y GitHub** por  - **Udemy** Formacion Online
 - 
