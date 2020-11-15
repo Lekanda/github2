@@ -280,6 +280,17 @@
 
 
 
+
+### GIT STASH
+- Es una forma de guardar los cambios que tengas , sin necesidad de estar en el Stage los cambios
+
+
+
+
+
+
+
 ### BIBLIOGAFIA, CURSOS Y DEMAS FUENTES
-- **Makigas**: Tutoriales de programacion - [Link](http://www.google.com)
-- **Curso de Git y GitHub** por  - 
+- **Makigas**: Tutoriales programacion en You Tube - [Lista de clases](https://www.youtube.com/playlist?list=PLTd5ehIj0goMCnj6V5NdzSIHBgrIXckGU)
+- **GIT+GitHub: Todo un sistema de control de versiones** por  Fernando Herrera - [Link a curso](https://www.udemy.com/course/git-github/)
+- 
