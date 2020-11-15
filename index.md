@@ -24,24 +24,28 @@
 
 
 
+
+
+
+
 ### ALIAS
 - Los alias es una forma de abreviar los comandos largos para escribirlos mas cortos. Unos ejemplos
-##### git lg
-```
-git config --global alias.lg "log --oneline --decorate --all --graph"
---oneline => una linea por commit
-```
+#### git lg
+    - `git config --global alias.lg "log --oneline --decorate --all --graph"` --oneline => una linea por commit
 - Con esta linea decimos que :
     - Escribir **git lg** para ejecutar el **alias**. Crea una vista mas clara del repositorio en consola
-> OPERATIVO
 
-##### git s
-```
-git config --global alias.s "status -s -b"
-```
+#### git s
+`git config --global alias.s "status -s -b"`
 - Con esta linea decimos que :
     - Escribir **git s** para ejecutar el **alias**. Nos da los cambios en repositorio
-> OPERATIVO
+
+#### git br
+- `git config --global alias.s "branch"`
+- Con esta line abreviamos **branch**(Rama) a **br**
+
+
+
 
 
 
@@ -70,7 +74,7 @@ git config --global alias.s "status -s -b"
 
 
 ### CAMBIOS EN STAGE Y COMMIT
-##### Actualizar y restaurar COMMITS
+#### Actualizar y restaurar COMMITS
 - Sí se **olvida algun cambio** que deberia haberse metido en el ultimo commit; ejecutar :
     - **git commit --amend**
     - En **Editor** poner _nombre de commit nuevo_
@@ -85,7 +89,7 @@ git config --global alias.s "status -s -b"
 - **Mete cambios al ultimo commit con mismo nombre**
     - `gir rest --soft HEAD^`
 
-##### Deshacer cambios en STAGE
+#### Deshacer cambios en STAGE
 - **Como deshacer cambios en el Stage** en un **archivo determinado**
     - `git checkout -- archivo.ext`
 
@@ -168,8 +172,8 @@ git config --global alias.s "status -s -b"
     - `git diff`
 - Nos da diferencias entre **2 commits dados**
     - `git diff hashviejo hashnuevo`
-- Nos da la diferencia **con un numero de orden de commit**. En este caso el penultimo(**~** = anterior)
-    - `git diff HEAD~1`
+- Nos da la diferencia **con un numero de orden de commit**. En este caso el penultimo(**~** = anterior ; **HEAD** = Donde apunta actualmente)
+    - `git diff HEAD~1 HEAD`
 
 
 
@@ -177,20 +181,20 @@ git config --global alias.s "status -s -b"
 
 ### GIT RESET
 > ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta.
-+
-##### GIT RESET
+
+ #### GIT RESET
 - Para **eliminar** un commmit con **hash dado**:
     `git reset f6e2697`
 
-##### GIT RESET --HARD
+#### GIT RESET --HARD
 - **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
     - `git reset --hard hashCommit`
 
-##### GIT RESET --SOFT
+#### GIT RESET --SOFT
 - Va a **eliminar** los commits antes de un **hashCommit** dado , y los cambios **los guarda en el Stage**
     - `git reset --soft hashCommit`
 
-##### GIT RESET --MIXED
+#### GIT RESET --MIXED
 - Retorna al commit seleccionado
     - `git reset --mixed hashCommit`
 
@@ -200,5 +204,66 @@ git config --global alias.s "status -s -b"
 
 ### GIT REVERT
 - Es parecido a **RESET** pero menos peligroso.
-    - 
+
+- Revierte a commit **dado**
+    - `git revert hashCommit`
+- Revierte a commit ultimo con **HEAD**
     - `git revert HEAD`
+- Revierte uno o varios comits **pero no crea un commit final**, deja los datos en el **Stage**
+    - `git revert --no-commit HEAD`
+    - `git revert --no-commit HEAD~1`
+    - `git revert --no-commit HEAD~2`
+- Para terminar de unir los commits en uno
+    - `git revert --continue`
+
+
+
+
+
+### GIT BRANCH (RAMAS)(Con Alias git br)
+- Para **crear** la rama
+    - `git branch nombre-rama`
+- Para **cambiar** a otra rama.(main rama por defecto, master antiguamente)
+    - `git checkout nombre-rama`
+- Para **crear** una _rama_ y *cambiar* a ella **a la vez**
+    - `git checkout -b nombre-rama`
+- Para **listar** las ramas 
+    - `git branch`
+- Para **Borrar** una rama
+    - `git branch -d nombre-rama`
+- Para **renombrar** una Rama
+    - `git branch -m nombre-rama-viejo nombre-rama-nuevo`
+- Para ver **origenes** y **ramas**
+    - `git branch -a`
+
+
+
+
+
+
+### GIT MERGE (Unir Ramas)
+- Para **unir ramas** , **estando en la rama en la que se va ha fusionar** (_main por ejemplo_)
+    - `git merge nombre-rama`
+    - **Hay que hacer un commit final en el que se integran las 2 ramas**
+
+#### Tipos de merge/uniones
+- **Fast forward** -> Rapida. **No hay cambios**
+- **Automatica** -> **No hay discordias** entra ramas y se unen
+-  **Manual** -> Hay conflictos entre ramas y se debe hacer la union de forma **manual**
+
+
+
+
+
+
+
+
+
+
+
+
+
+### BIBLIOGAFIA
+- Makigas: Tutoriales de programacion - (Canal de YouTube)[http://www.google.es]
+- Curso de Git y GitHub por  - Udemy Formacion Online
+- 
