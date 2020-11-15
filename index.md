@@ -124,6 +124,9 @@ git config --global alias.s "status -s -b"
 
 
 
+
+
+
 ### GIT INIT
 - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
 ```
@@ -138,27 +141,35 @@ git config --global alias.s "status -s -b"
 ```
 
 
+
+
+
 ### GIT LOG
 - Listado de commits hechos. **Lista completa con mucha informacion**
 > Con el Alias actual seria: **git lg**. Añane mas opciones
 >> Pero se puede usar tambien **git log**
 
+
+
+
+
 ### GIT STATUS
 - Con alias utilizamos 
-```
-        git s
-```
+        `git s`
 - Nos dice los cambios que hay en en **work directory y stage**
+
+
+
 
 
 
 ### GIT DIFF
 - Nos da diferencias del **ultimo commit y lo actual**
-    `git diff`
+    - `git diff`
 - Nos da diferencias entre **2 commits dados**
-    `git diff hashviejo hashnuevo`
+    - `git diff hashviejo hashnuevo`
 - Nos da la diferencia **con un numero de orden de commit**. En este caso el penultimo(**~** = anterior)
-    `git diff HEAD~1`
+    - `git diff HEAD~1`
 
 
 
@@ -173,15 +184,15 @@ git config --global alias.s "status -s -b"
 
 ##### GIT RESET --HARD
 - **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
-    `git reset --hard hashCommit`
+    - `git reset --hard hashCommit`
 
 ##### GIT RESET --SOFT
 - Va a **eliminar** los commits antes de un **hashCommit** dado , y los cambios **los guarda en el Stage**
-    `git reset --soft hashCommit`
+    - `git reset --soft hashCommit`
 
 ##### GIT RESET --MIXED
 - Retorna al commit seleccionado
-    `git reset --mixed hashCommit`
+    - `git reset --mixed hashCommit`
 
 
 
@@ -190,4 +201,4 @@ git config --global alias.s "status -s -b"
 ### GIT REVERT
 - Es parecido a **RESET** pero menos peligroso.
     - 
-    `git revert HEAD`
+    - `git revert HEAD`
