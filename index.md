@@ -281,5 +281,5 @@
 
 
 ### BIBLIOGAFIA, CURSOS Y DEMAS FUENTES
-- **Makigas**: Tutoriales de programacion - (Link)["http://www.google.com"]
+- **Makigas**: Tutoriales de programacion - [Link]("http://www.google.com")
 - **Curso de Git y GitHub** por  - 
