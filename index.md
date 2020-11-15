@@ -8,7 +8,32 @@
 - [GIT LOG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-log)
 - [GIT STATUS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-status)
 
+---
+
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
+
+---
+
+### ALIAS
+- Los alias es una forma de abreviar los comandos largos para escribirlos mas cortos. Unos ejemplos
+##### git lg
+```
+git config --global alias.lg "log --oneline --decorate --all --graph"
+```
+- Con esta linea decimos que :
+    - Escribir **git lg** para ejecutar el **alias**. Crea una vista mas clara del repositorio en consola
+> OPERATIVO
+
+##### git s
+```
+git config --global alias.s "status -s -b"
+```
+- Con esta linea decimos que :
+    - Escribir **git s** para ejecutar el **alias**. Nos da los cambios en repositorio
+> OPERATIVO
+
+
+
 
 ### GIT ADD
 - **git add .** => Añade todos los archivos con cambios en repositorio.
@@ -21,10 +46,16 @@
 - __git reset *.xml__ =>  Quita del Stage todos los archivos _.xml_
 > Comandos para añadir archivos al Stage
 
+
+
+
 ### GIT COMMIT
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
  > Crear COMMITS
  
+
+
+
 ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
@@ -49,6 +80,9 @@
  ```
 > Configuracion inicial para instalar Git -Cap.9
 
+
+
+
 ### GIT INIT
 - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
 ```
@@ -57,12 +91,21 @@
  
 - Se puede **tambien** clonar un repositorio de alguien
  
+
+
+
 ### GIT LOG
 - Listado de commits hechos. **Lista completa con mucha informacion**
-> Con el Alias actual seria: **git lg**
+> Con el Alias actual seria: **git lg**. Añane mas opciones
+>> Pero se puede usar tambien **git log**
 
 ### GIT STATUS
 - Con alias utilizamos 
 ```
           git s
 ```
+- Nos dice los cambios que hay en en work directory y stage
+
+
+
+### GIT 
