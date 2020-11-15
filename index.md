@@ -1,6 +1,7 @@
 # Comandos Git/GitHub
 
 ### INDICE de comandos 
+- [GIT ALIAS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#alias)
 - [GIT ADD](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-add)
 - [GIT COMMIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-commit)
 - [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
@@ -13,6 +14,15 @@
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
 
 ---
+
+### GIT HELP
+- Estos comandos nos dan la lista de comandos posibles.
+    - **git help** => Nos da lista simple
+    - **git help -a** => Nos da lista completa
+    - **git help -g** => Nos da lista completa
+
+
+
 
 ### ALIAS
 - Los alias es una forma de abreviar los comandos largos para escribirlos mas cortos. Unos ejemplos
@@ -53,30 +63,32 @@ git config --global alias.s "status -s -b"
  - **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
  > Crear COMMITS
  
-
+ - Sí se olvida algun cambio que deberia haberse metido en el ultimo commit; ejecutar :
+    - **git commit --amend**
+    - En Editor poner nombre de commit
 
 
 ### GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
  ```
-         git config --global user.name "nombre de usuario"
-         git config --global user.email "password de usuario"
+        git config --global user.name "nombre de usuario"
+        git config --global user.email "password de usuario"
  ```
 
  - Con este comando entramos en **configuracion de usuario** 
  ```
-          git config --global -e => 
+        git config --global -e => 
  ```
  
   - Con este comando entramos en **configuracion de usuario mejorada**
  ```
-          git config --global -l => 
+        git config --global -l => 
  ```
  
  - Con este comando comprobamos que la configuracion es correcta sí da el nombre metido
  ```
-          git config user.name => 
+        git config user.name => 
  ```
 > Configuracion inicial para instalar Git -Cap.9
 
@@ -86,12 +98,15 @@ git config --global alias.s "status -s -b"
 ### GIT INIT
 - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
 ```
-          git init
+        git init
 ```
- 
+
 - Se puede **tambien** clonar un repositorio de alguien
  
-
+- Para poder ver los remotos que se tienen en el repositorio.
+```
+        git remote -v
+```
 
 
 ### GIT LOG
@@ -102,10 +117,12 @@ git config --global alias.s "status -s -b"
 ### GIT STATUS
 - Con alias utilizamos 
 ```
-          git s
+        git s
 ```
-- Nos dice los cambios que hay en en work directory y stage
+- Nos dice los cambios que hay en en **work directory y stage**
 
 
 
-### GIT 
+### GIT DIFF
+- Nos da diferencias del ultimo commit y lo actual
+        `git diff`
