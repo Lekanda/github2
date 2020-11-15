@@ -65,7 +65,8 @@ git config --global alias.s "status -s -b"
  
  - Sí se olvida algun cambio que deberia haberse metido en el ultimo commit; ejecutar :
     - **git commit --amend**
-    - En Editor poner nombre de commit
+    - En **Editor** poner _nombre de commit nuevo_
+
 
 
 ### GIT CONFIG
