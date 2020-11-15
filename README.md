@@ -1,7 +1,12 @@
-###         :star:APUNTES DEL CURSO DE GITHUB:star:
+###         :star: APUNTES DE GIT y GITHUB: star:
 
 - Fecha inicio: **13/11/2020**
-- Curso por _Cesar Colina_
+##### BANCO DE PRUEBAS
+
+
+- _Este repositorio es para realizar pruebas en el aprendizaje de Git y GitHub_
+
+
 - Web del curso con datos de interes y metodos abreviados
     - [https://lekanda.github.io/github2/](https://lekanda.github.io/github2/)
 
