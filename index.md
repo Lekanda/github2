@@ -1,4 +1,4 @@
-# Comandos Git/GitHub
+# Comandos Git & Git/GitHub
 
 ### INDICE de comandos 
 - [GIT HELP](#anclaHelp)
@@ -21,6 +21,7 @@
 ---
 [Metodos](metodos.md)
 ---
+
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
 
 - __git add . && git commit -m "*DescripcionDeCommit*"__ => Ejecuta dos comandos a la vez
