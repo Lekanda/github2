@@ -1,7 +1,7 @@
 # Comandos Git/GitHub
 
 ### INDICE de comandos 
-- [GIT ALIAS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#alias)
+- [GIT ALIAS](###ALIAS)
 - [GIT ADD](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-add)
 - [GIT COMMIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-commit)
 - [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
