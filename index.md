@@ -7,7 +7,7 @@
 - [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
 - [GIT INIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-init)
 - [GIT LOG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-log)
-- [GIT STATUS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-status)
+- [GIT STATUS](###STATUS)
 
 ---
 [Metodos](metodos.md)
