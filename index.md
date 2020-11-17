@@ -10,8 +10,11 @@
 - [GIT STATUS](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-status)
 
 ---
-
+[Metodos](metodos.md)
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
+
+
+- __git add . && git commit -m "*DescripcionDeCommit*"__ => Ejecuta dos comandos a la vez
 
 ---
 
@@ -311,9 +314,38 @@
 
 |   Comando	|   Explicacion	|
 |---	|---	|
+|   **git remote add origin  _URLdeRepositorioRemoto_**	|   Añade un repositorio remoto al proyecto	|
+
+
+
+
+
+### GIT CLONE
+- Clona un repositorio de otra persona. Link en el repositorio en cuestion.
+- Se puede hacer un **push** y **pull** a ese repositorio
+|   Comando	|   Explicacion	|
+|:-:	|:-:	|
+|   **git clone urlRepositorioaClonar**	_nombreCarpeta_(opcional)|   Clona el repositorio a la carpeta donde se esta	|
+|   	|   	|
 |   	|   	|
 
 
+
+
+
+### GIT PUSH
+- Sube al repositorio remoto los cambios
+
+
+
+
+
+### GIT PULL
+- Mira si hay cambios en un repositorio remoto
+
+
+
+### GIT REBASE
 
 
 
