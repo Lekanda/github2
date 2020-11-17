@@ -1,4 +1,4 @@
-# Comandos Git & Git/GitHub
+# ![Git Logo](static/icon-git.ico) Comandos Git & Git/GitHub
 
 ### INDICE de comandos 
 - [GIT HELP](#anclaHelp)
@@ -57,7 +57,6 @@
  ```
         git config user.name => 
  ```
-> Configuracion inicial para instalar Git -Cap.9
 
 
 ### <a name="anclaAlias"></a>ALIAS
