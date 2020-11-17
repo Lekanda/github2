@@ -282,7 +282,36 @@
 
 
 ### GIT STASH
-- Es una forma de guardar los cambios que tengas , sin necesidad de estar en el Stage los cambios
+- Es una forma de guardar los cambios que tengas , sin necesidad de estar en el Stage los cambios, pero si estan tambien vale.
+
+|   Comando	|   Explicacion	|
+|---	|---	|
+|   **git stash**	|   Guarda en el Stash los archivos modificados, y lo que este en el Stage	|
+|   **git stash list**	|   Lista los Stashs creados	|
+|   **git stash list --stat**	|   Lista los Stashs creados con mas info	|
+|   **git show stash**	|   Mas info de los Stash	|
+|   **git show stash@{3}**	|   Mas info de Stash 3	|
+|   **git stash -h**	|   Da comandos de ayuda	|
+|   **git stash apply**	|   Aplica los ultimos cambios que se han hecho en el stash y lo mete donde estes trabajando	|
+|   **git stash apply stash@{3}**	|   Aplica los cambios del Stash 3 y lo mete donde estes trabajando	|
+|   **git stash drop**	|   Borra el primero en la lista de los Stash	|
+|   **git stash drop stash@{2}**	|   En este ejemplo borra el segundo en la lista de los Stash	|
+|   **git stash clear**	|   :warning: CUIDADO: Borra todas las entradas del Stash :warning: |
+|   **git stash save** "_Comentario del Stash_"	|   Comentar un Stash	|
+|   **git stash pop**	|   Hace los mismo que  **git stash apply**	|
+
+
+
+
+
+
+### GIT REMOTE
+- Este SubComando vale para conectarse a repositorios remotos en internet( GitHub, GitLab....)
+    - Se puede mandar y recibir(Pull, Push)
+
+|   Comando	|   Explicacion	|
+|---	|---	|
+|   	|   	|
 
 
 
