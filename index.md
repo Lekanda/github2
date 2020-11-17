@@ -1,110 +1,40 @@
 # Comandos Git/GitHub
 
 ### INDICE de comandos 
-- [GIT ALIAS](#ALIAS)
-- [GIT ADD](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-add)
-- [GIT COMMIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-commit)
-- [GIT CONFIG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-config)
-- [GIT INIT](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-init)
-- [GIT LOG](https://github.com/Lekanda/github2/blob/gh-pages/index.md#git-log)
+- [GIT HELP](#anclaHelp)
+- [GIT CONFIG](#anclaConfig)
+- [GIT ALIAS](#anclaAlias)
+- [GIT INIT](#anclaInit)
+- [GIT ADD](#anclaAdd)
+- [GIT COMMIT](#anclaCommit)
+- [GIT LOG](#anclaLog)
 - [GIT STATUS](#anclaStatus)
+- [Cambios en STAGE y COMMIT](#anclaCambios)
+- [GIT RESET](#anclaReset)
+- [GIT REVERT](#anclaRevert)
+- [GIT BRANCH](#anclaBranch)
+- [GIT MERGE](#anclaMerge)
+- [GIT TAGS](#anclaTags)
+- [GIT REMOTE](#anclaRemote)
+- [GIT CLONE](#anclaClone)
 
 ---
 [Metodos](metodos.md)
+---
 - Tu puedes usar el [editor on GitHub](https://github.com/Lekanda/github2/edit/gh-pages/index.md) utilizando para editar, **Markdown**.
-
 
 - __git add . && git commit -m "*DescripcionDeCommit*"__ => Ejecuta dos comandos a la vez
 
 ---
 
-### GIT HELP
+### <a name="anclaHelp"></a>GIT HELP
 - Estos comandos nos dan la lista de comandos posibles.
     - **git help** => Nos da lista simple
     - **git help -a** => Nos da lista completa
     - **git help -g** => Nos da lista completa
 
 
-
-
-
-
-
-
-### ALIAS
-- Los alias es una forma de abreviar los comandos largos para escribirlos mas cortos. Unos ejemplos
-#### git lg
-    - `git config --global alias.lg "log --oneline --decorate --all --graph"` --oneline => una linea por commit
-- Con esta linea decimos que :
-    - Escribir **git lg** para ejecutar el **alias**. Crea una vista mas clara del repositorio en consola
-
-#### git s
-`git config --global alias.s "status -s -b"`
-- Con esta linea decimos que :
-    - Escribir **git s** para ejecutar el **alias**. Nos da los cambios en repositorio
-
-#### git br
-- `git config --global alias.s "branch"`
-- Con esta line abreviamos **branch**(Rama) a **br**
-
-
-
-
-
-
-
-### GIT ADD
-- **git add .** => Añade todos los archivos con cambios en repositorio.
-- **git add -A** => Añade todos los archivos con cambios en repositorio.
-- **git add --all** => Añade todos los archivos con cambios en repositorio, parecido **-A**.
-- **git add _nombreArchivo.ext_**=> Anade archivo dado.
-- __git add *.png__=> Añade todos los archivos **_.png_**.
-- __git add "*.txt"__ => Añade todos los **_.txt_** del **_proyecto_**.
-- **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
-- __git reset *.xml__ =>  Quita del Stage todos los archivos _.xml_
-> Comandos para añadir archivos al Stage
-
-
-
-
-### GIT COMMIT
-##### Hacer commits
-- **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
-- **git commit -am "_mensaje de commit_"** => Hace commit y Stage a **repositorio local**
-
-
-
-
-
-### CAMBIOS EN STAGE Y COMMIT
-#### Actualizar y restaurar COMMITS
-- Sí se **olvida algun cambio** que deberia haberse metido en el ultimo commit; ejecutar :
-    - **git commit --amend**
-    - En **Editor** poner _nombre de commit nuevo_
-
-- Sí se quiere **cambiar la descripcion** del commit; ejecutar :
-    - **git commit --amend -m "_mensaje de commit modificado_"**
-    - En **Editor** poner _nombre de commit nuevo_
-
-- **Deshace cambios en el commit** de un archivo dado
-    - `git reset HEAD _archivo.ext`
-
-- **Mete cambios al ultimo commit con mismo nombre**
-    - `gir rest --soft HEAD^`
-
-#### Deshacer cambios en STAGE
-- **Como deshacer cambios en el Stage** en un **archivo determinado**
-    - `git checkout -- archivo.ext`
-
-- **Como deshacer cambios en el Stage** en **todos** los archivos
-    - `git checkout -- .`
-
-
-
-
-
-
-### GIT CONFIG
+### <a name="anclaConfig"></a>GIT CONFIG
  - Solo se hace una vez al instalar **GIT**
  - Con esto introducimos el **nombre de usuario de GitHub** y **email**
  ```
@@ -129,12 +59,24 @@
 > Configuracion inicial para instalar Git -Cap.9
 
 
+### <a name="anclaAlias"></a>ALIAS
+- Los alias es una forma de abreviar los comandos largos para escribirlos mas cortos. Unos ejemplos
+#### git lg
+    - `git config --global alias.lg "log --oneline --decorate --all --graph"` --oneline => una linea por commit
+- Con esta linea decimos que :
+    - Escribir **git lg** para ejecutar el **alias**. Crea una vista mas clara del repositorio en consola
+
+#### git s
+`git config --global alias.s "status -s -b"`
+- Con esta linea decimos que :
+    - Escribir **git s** para ejecutar el **alias**. Nos da los cambios en repositorio
+
+#### git br
+- `git config --global alias.s "branch"`
+- Con esta line abreviamos **branch**(Rama) a **br**
 
 
-
-
-
-### GIT INIT
+### <a name="anclaInit"></a>GIT INIT
 - Crea un repositorio nuevo en el _folder/carpeta_ que se ejecuta.
 ```
         git init
@@ -147,17 +89,28 @@
         git remote -v
 ```
 
+### <a name="anclaAdd"></a>GIT ADD
+- **git add .** => Añade todos los archivos con cambios en repositorio.
+- **git add -A** => Añade todos los archivos con cambios en repositorio.
+- **git add --all** => Añade todos los archivos con cambios en repositorio, parecido **-A**.
+- **git add _nombreArchivo.ext_**=> Anade archivo dado.
+- __git add *.png__=> Añade todos los archivos **_.png_**.
+- __git add "*.txt"__ => Añade todos los **_.txt_** del **_proyecto_**.
+- **git add folder/** => Añade todos los archivos con cambios de la carpeta dada.
+- __git reset *.xml__ =>  Quita del Stage todos los archivos _.xml_
+> Comandos para añadir archivos al Stage
 
 
+### <a name="anclaCommit"></a>GIT COMMIT
+##### Hacer commits
+- **git commit -m "_mensaje de commit_"** => Hace commit a **repositorio local**
+- **git commit -am "_mensaje de commit_"** => Hace commit y Stage a **repositorio local**
 
 
-### GIT LOG
+### <a name="anclaLog"></a>GIT LOG
 - Listado de commits hechos. **Lista completa con mucha informacion**
 > Con el Alias actual seria: **git lg**. Añane mas opciones
 >> Pero se puede usar tambien **git log**
-
-
-
 
 
 ### <a name="anclaStatus"></a>GIT STATUS
@@ -166,23 +119,31 @@
 - Nos dice los cambios que hay en en **work directory y stage**
 
 
+### <a name="anclaCambios"></a>CAMBIOS EN STAGE Y COMMIT
+#### Actualizar y restaurar COMMITS
+- Sí se **olvida algun cambio** que deberia haberse metido en el ultimo commit; ejecutar :
+    - **git commit --amend**
+    - En **Editor** poner _nombre de commit nuevo_
+
+- Sí se quiere **cambiar la descripcion** del commit; ejecutar :
+    - **git commit --amend -m "_mensaje de commit modificado_"**
+    - En **Editor** poner _nombre de commit nuevo_
+
+- **Deshace cambios en el commit** de un archivo dado
+    - `git reset HEAD _archivo.ext`
+
+- **Mete cambios al ultimo commit con mismo nombre**
+    - `gir rest --soft HEAD^`
+
+#### Deshacer cambios en STAGE
+- **Como deshacer cambios en el Stage** en un **archivo determinado**
+    - `git checkout -- archivo.ext`
+
+- **Como deshacer cambios en el Stage** en **todos** los archivos
+    - `git checkout -- .`
 
 
-
-
-### GIT DIFF
-- Nos da diferencias del **ultimo commit y lo actual**
-    - `git diff`
-- Nos da diferencias entre **2 commits dados**
-    - `git diff hashviejo hashnuevo`
-- Nos da la diferencia **con un numero de orden de commit**. En este caso el penultimo(**~** = anterior ; **HEAD** = Donde apunta actualmente)
-    - `git diff HEAD~1 HEAD`
-
-
-
-
-
-### GIT RESET
+### <a name="anclaReset"></a>GIT RESET
 > ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta.
 
 #### GIT RESET
@@ -202,10 +163,7 @@
     - `git reset --mixed hashCommit`
 
 
-
-
-
-### GIT REVERT
+### <a name="anclaRevert"></a>GIT REVERT
 - Es parecido a **RESET** pero menos peligroso.
 
 - Revierte a commit **dado**
@@ -220,10 +178,9 @@
     - `git revert --continue`
 
 
+### <a name="anclaBranch"></a>GIT BRANCH
+- Con Alias `git br`
 
-
-
-### GIT BRANCH (RAMAS)(Con Alias git br)
 - Para **crear** la rama
     - `git branch nombre-rama`
 - Para **cambiar** a otra rama.(main rama por defecto, master antiguamente)
@@ -240,11 +197,7 @@
     - `git branch -a`
 
 
-
-
-
-
-### GIT MERGE (Unir Ramas)
+### <a name="anclaMerge"></a>GIT MERGE
 - Para **unir ramas** , **estando en la rama en la que se va ha fusionar** (_main por ejemplo_)
     - `git merge nombre-rama`
     - **Hay que hacer un commit final en el que se integran las 2 ramas**
@@ -257,11 +210,7 @@
 - **Manual** -> Hay conflictos entre ramas y se debe hacer la union de forma **manual** en Editor
 
 
-
-
-
-
-### GIT TAGS
+### <a name="anclaTags"></a>GIT TAGS
 - **Crear** un TAG
     - `git tag nombre-tag`
 - **Listar** los TAGs
@@ -284,7 +233,7 @@
 
 
 
-### GIT STASH
+### <a name="anclaTags"></a>GIT STASH
 - Es una forma de guardar los cambios que tengas , sin necesidad de estar en el Stage los cambios, pero si estan tambien vale.
 
 |   Comando	|   Explicacion	|
@@ -304,11 +253,7 @@
 |   **git stash pop**	|   Hace los mismo que  **git stash apply**	|
 
 
-
-
-
-
-### GIT REMOTE
+### <a name="anclaRemote"></a>GIT REMOTE
 - Este SubComando vale para conectarse a repositorios remotos en internet( GitHub, GitLab....)
     - Se puede mandar y recibir(Pull, Push)
 
@@ -317,10 +262,7 @@
 |   **git remote add origin  _URLdeRepositorioRemoto_**	|   Añade un repositorio remoto al proyecto	|
 
 
-
-
-
-### GIT CLONE
+### <a name="anclaClone"></a>GIT CLONE
 - Clona un repositorio de otra persona. Link en el repositorio en cuestion.
 - Se puede hacer un **push** y **pull** a ese repositorio
 |   Comando	|   Explicacion	|
