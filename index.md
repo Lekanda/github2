@@ -160,7 +160,7 @@
 
 
 
-### GIT STATUS
+### <a name="anclaStatus"></a>GIT STATUS
 - Con alias utilizamos 
         `git s`
 - Nos dice los cambios que hay en en **work directory y stage**
