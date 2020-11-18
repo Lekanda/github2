@@ -1,4 +1,4 @@
-# ![Git Logo](static/icon-git.ico) Comandos Git & Git/GitHub
+# ![Git Logo](static/icon-git.ico) Comandos Git & GitHub
 
 ### INDICE de comandos 
 - [GIT HELP](#anclaHelp)
@@ -17,6 +17,7 @@
 - [GIT TAGS](#anclaTags)
 - [GIT REMOTE](#anclaRemote)
 - [GIT CLONE](#anclaClone)
+- [GIT PUSH](#anclaPush)
 
 ---
 [Metodos](metodos.md)
@@ -259,7 +260,11 @@
 
 |   Comando	|   Explicacion	|
 |---	|---	|
-|   **git remote add origin  _URLdeRepositorioRemoto_**	|   Añade un repositorio remoto al proyecto	|
+|   **git remote add origin  _URLdeRepositorioRemoto_**	|   **Añade** un repositorio remoto al proyecto	|
+|   **git remote**	|   Nos **da** los **remotos**	|
+|   **git remote -v**	|   Nos da los **push** y **fetch** remotos 	|
+|   	|   	|
+|   	|   	|
 
 
 ### <a name="anclaClone"></a>GIT CLONE
@@ -275,8 +280,13 @@
 
 
 
-### GIT PUSH
+### <a name="anclaPush"></a>GIT PUSH
 - Sube al repositorio remoto los cambios
+|   Comando	|   Explicacion	|
+|---	|---	|
+|   **git push origin master**	|   **Sube** cambios al remoto _origin_	|
+|   **git push origin --all**	|   _Sube varias ramas_ a la vez de golpe	|
+|   **git push**	|   Una vez hecho **git push origin master** con este vale para subir los cambios al repositorio remoto	|
 
 
 
@@ -284,7 +294,10 @@
 
 ### GIT PULL
 - Mira si hay cambios en un repositorio remoto
-
+|   Comando	|   Explicacion	|
+|---	|---	|
+|   	|   	|
+|   	|   	|
 
 
 ### GIT REBASE
