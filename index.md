@@ -1,5 +1,5 @@
 <script src="https://kit.fontawesome.com/9b21360d5e.js" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="style.css">
 
 # ![Git Logo](static/icon-git.ico) Comandos Git & GitHub
 
