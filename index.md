@@ -1,3 +1,6 @@
+<script src="https://kit.fontawesome.com/9b21360d5e.js" crossorigin="anonymous"></script>
+
+
 # ![Git Logo](static/icon-git.ico) Comandos Git & GitHub
 
 ### INDICE de comandos 
@@ -145,14 +148,14 @@
 
 
 ### <a name="anclaReset"></a>GIT RESET
-> ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta.
+> ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta. <i class="fas fa-exclamation"></i>
 
 #### GIT RESET
 - Para **eliminar** un commmit con **hash dado**:
     `git reset f6e2697`
 
 #### GIT RESET --HARD
-- **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
+- <i class="fas fa-exclamation"></i> **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
     - `git reset --hard hashCommit`
 
 #### GIT RESET --SOFT
