@@ -2,7 +2,7 @@
 ### Metodos de trabajo de Git y GitHub 
 <i class="fas fa-atom"></i>
 
-<i class="fas fa-jedi"></i>
+<i class="fas fa-jedi fa-9x"></i>
 
 
 
