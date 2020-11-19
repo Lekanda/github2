@@ -5,7 +5,7 @@
 
 <i class="fas fa-jedi fa-8x" style="color:blue"></i>
 
-<i class="fas fa-bomb fa-3x prueba" ></i>
+<i class="fas fa-bomb fa-6x prueba" ></i>
 
 
 
