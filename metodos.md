@@ -3,7 +3,7 @@
 ### Metodos de trabajo de Git y GitHub 
 <i class="fas fa-atom " style="color:red"></i>
 
-<i class="fas fa-jedi fa-8x" style="color:black"></i>
+<i class="fas fa-jedi fa-8x" style="color:blue"></i>
 
 
 
