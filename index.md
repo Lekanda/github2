@@ -288,7 +288,8 @@
 
 ### <a name="anclaClone"></a>GIT CLONE
 - Clona un repositorio de otra persona. Link en el repositorio en cuestion.
-- Se puede hacer un **push** y **pull** a ese repositorio
+- Se puede hacer un **push** y **pull** a ese repositorio  
+
 |   Comando	|   Explicacion	|
 |:-:	|:-:	|
 |   **git clone urlRepositorioaClonar**	_nombreCarpeta_(opcional)|   Clona el repositorio a la carpeta donde se esta	|
@@ -298,7 +299,8 @@
 
 
 ### <a name="anclaPush"></a>GIT PUSH
-- Sube al repositorio remoto los cambios
+- Sube al repositorio remoto los cambios  
+
 |   Comando	|   Explicacion	|
 |---	|---	|
 |   **git push origin master**	|   **Sube** cambios al remoto _origin_	|
@@ -310,7 +312,8 @@
 - Mira si hay cambios en un repositorio remoto
 - Es la combinacion de 2 comandos
     1- `git fetch origin` => Sirve para preguntar a un remoto sí hay novedades, y sí las ahi descargarlas al repo local
-    2- 
+    2-   
+      
 |   Comando	|   Explicacion	|
 |---	|---	|
 |   	|   	|
