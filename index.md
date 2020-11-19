@@ -151,31 +151,31 @@
 ### <a name="anclaReset"></a>GIT RESET
 > ES PELIGROSO, mejor usar el **REVERT**, pero bien usado es una buena herramienta. <i class="fas fa-exclamation"></i>
 
----
+
 
 #### GIT RESET
 - Para **eliminar** un commmit con **hash dado**:
     `git reset f6e2697`
 
----
+
 
 #### GIT RESET --HARD
 - <i class="fas fa-exclamation"></i> **PELIGROSO**. Para **eliminar** todo lo que hay **despues** de un hashCommit dado, y los cambios son borrados y no se pueden recuperar:
     - `git reset --hard hashCommit`
 
----
+
 
 #### GIT RESET --SOFT
 - Va a **eliminar** los commits antes de un **hashCommit** dado , y los cambios **los guarda en el Stage**
     - `git reset --soft hashCommit`
 
----
+
 
 #### GIT RESET --MIXED
 - Retorna al commit seleccionado
     - `git reset --mixed hashCommit`
 
----
+
 
 ### <a name="anclaRevert"></a>GIT REVERT
 - Es parecido a **RESET** pero menos peligroso.
@@ -191,7 +191,7 @@
 - Para terminar de unir los commits en uno
     - `git revert --continue`
 
----
+
 
 ### <a name="anclaBranch"></a>GIT BRANCH
 - Con Alias `git br`
@@ -211,7 +211,7 @@
 - Para ver **origenes** y **ramas**
     - `git branch -a`
 
----
+
 
 ### <a name="anclaMerge"></a>GIT MERGE
 - Para **unir ramas** , **estando en la rama en la que se va ha fusionar** (_main por ejemplo_)
@@ -222,14 +222,14 @@
 - Para unir dos ramas , una **local** y otra **remota**
     - `git merge origin/master`
 
----
+
 
 #### Tipos de merge/uniones
 - **Fast forward** -> Rapida. **No hay cambios**
 - **Automatica/Recursiva** -> **No hay discordias** entra ramas y se unen
 - **Manual** -> Hay conflictos entre ramas y se debe hacer la union de forma **manual** en Editor
 
----
+
 
 ### <a name="anclaTags"></a>GIT TAGS
 - **Crear** un TAG
@@ -249,7 +249,7 @@
     - `git checkout v0.1.0`
 - **Filtrar** TAGs que coincidan con la busqueda
     - `git tag -l "v0.1.*"`
----
+
 
 ### <a name="anclaTags"></a>GIT STASH
 - Es una forma de guardar los cambios que tengas , sin necesidad de estar en el Stage los cambios, pero si estan tambien vale.
@@ -270,7 +270,7 @@
 |   **git stash save** "_Comentario del Stash_"	|   Comentar un Stash	|
 |   **git stash pop**	|   Hace los mismo que  **git stash apply**	|
 
----
+
 
 ### <a name="anclaRemote"></a>GIT REMOTE
 - Este SubComando vale para conectarse a repositorios remotos en internet( GitHub, GitLab....)
@@ -284,7 +284,7 @@
 |   	|   	|
 |   	|   	|
 
----
+
 
 ### <a name="anclaClone"></a>GIT CLONE
 - Clona un repositorio de otra persona. Link en el repositorio en cuestion.
@@ -295,7 +295,7 @@
 |   	|   	|
 |   	|   	|
 
----
+
 
 ### <a name="anclaPush"></a>GIT PUSH
 - Sube al repositorio remoto los cambios
@@ -305,7 +305,6 @@
 |   **git push origin --all**	|   _Sube varias ramas_ a la vez de golpe	|
 |   **git push**	|   Una vez hecho **git push origin master** con este vale para subir los cambios al repositorio remoto	|
 
----
 
 ### <a name="anclaPull"></a>GIT PULL
 - Mira si hay cambios en un repositorio remoto
@@ -317,7 +316,6 @@
 |   	|   	|
 |   	|   	|
 
----
 
 ### GIT REBASE
 
