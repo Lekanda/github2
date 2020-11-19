@@ -3,7 +3,7 @@
 ### Metodos de trabajo de Git y GitHub 
 <i class="fas fa-atom prueba"></i>
 
-<i class="fas fa-jedi fa-9x"></i>
+<i class="fas fa-jedi fa-9x prueba"></i>
 
 
 
